@@ -32,7 +32,7 @@ export default function Number(props) {
   const [number, setNumber] = useState(0);
 
   useEffect(() => {
-    setNumber(props.number);
+    setNumber(props.number || 0);
   }, [props.number]);
 
   return (
