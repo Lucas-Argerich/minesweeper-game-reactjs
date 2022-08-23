@@ -3,7 +3,11 @@ import { MinesContext } from "../../context";
 import styled from "styled-components";
 import Cell from "../cell";
 
-const Container = styled.div``;
+const Container = styled.div`
+  overflow: scroll;
+  height: calc(100vh - 50px) ;
+`;
+
 const Row = styled.div`
   display: flex;
   justify-content: center;
