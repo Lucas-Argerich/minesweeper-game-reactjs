@@ -1,10 +1,15 @@
-import './App.css';
-import Header from './components/header';
+import "./App.css";
+import Board from "./components/board";
+import Header from "./components/header";
+import { MinesProvider } from "./context";
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      <MinesProvider>
+        <Header />
+        <Board />
+      </MinesProvider>
     </div>
   );
 }
