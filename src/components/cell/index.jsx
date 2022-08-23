@@ -3,8 +3,8 @@ import styled from "styled-components";
 
 const Border = styled.div`
   border: 1px solid var(--color-secondary);
-  width: 40px;
-  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
 `;
 
 const StyledCell = styled.div`
