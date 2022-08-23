@@ -34,13 +34,8 @@ export const MinesProvider = ({ children }) => {
   }, []);
 
   useEffect(() => {
-    console.log(array);
     amountOfBombs()
   }, [array]);
-
-  useEffect(() => {
-    console.log("bombs:", generatedBombs);
-  }, [generatedBombs]);
 
   return (
     <MinesContext.Provider
